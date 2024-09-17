@@ -1,0 +1,276 @@
+.custom-btn {
+    margin-top: 10px;  
+    padding: 0px;
+    width: 80px; 
+    height:30px;         
+    border-width: 1px;        
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+    border-radius: 100px;
+  }
+  
+  .custom-btn:hover {
+    background-color: #f8f9fa;  
+    border-color: #343a40;      
+  }
+  
+  .btn-dark.custom-btn:hover {
+    background-color: #212529; 
+  }
+  .image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;   
+                
+}
+
+.costum-img {
+    width: 220px; /* Example size for the largest image */
+    height: 300px; /* Adjust height to match width if needed */
+    margin: 0 10px; /* Spacing between images */
+}
+
+.costum-img1 {
+    width: 190px; /* Bigger than the third image */
+    height: 250px;
+    margin:0 10px;
+}
+
+.costum-img2 {
+    width: 200px; /* Smaller than the second image */
+    height: 150px;
+    margin: 0 10px;
+}
+
+.costum-img3 {
+    width: 190px; /* Bigger than the third image */
+    height: 250px;
+    margin: 0 10px;
+}
+
+.costum-img4 {
+    width: 200px; /* Bigger than the fourth image */
+    height: 300px;
+    margin: 0 10px;
+}
+
+.info-card {
+  /* background-color: #f7f8fa; */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: start;
+}
+.color{
+  background-color: rgb(226, 237, 237);
+}
+.info-card h5 {
+  color: #007bff;
+  font-weight: bold;
+}
+.container{
+  /* background-color: rgb(244, 247, 247); */
+}
+.rounded{
+  background-color: rgb(187, 249, 249);
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .custom-img-large, .custom-img-small, .custom-img-medium {
+    width: 100%;
+    margin: 10px 0;
+  }
+} */
+.image-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Space between top and bottom rows */
+}
+
+.image-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-img {
+  margin: 5px; /* Space between images */
+}
+
+/* Optional: Adjust image sizes for responsive behavior */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stack images vertically on small screens */
+@media (max-width: 768px) {
+  .image-top, .image-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+.how-it-works-section {
+  padding: 60px 0;
+}
+
+.how-it-works-section h2 {
+  margin-bottom: 40px;
+}
+
+.step-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.step-placeholder {
+  width: 100%;
+  /* padding-top: 0px; */
+  height: 460px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-bg {
+  background-color: #007bff; /* Adjust the color to match your design */
+}
+
+@media (max-width: 768px) {
+  .how-it-works-section .row {
+      flex-direction: column;
+  }
+
+  .step-placeholder, .step-image {
+      height: 200px;
+  }
+}
+
+.underline-section {
+  position: relative;
+  padding-bottom: 1rem; /* Adjust space between content and underline */
+}
+.benefits{
+  margin-bottom: 100px;
+}
+
+.underline-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #007bff; /* Color of the underline (Bootstrap's primary color) */
+  border-radius: 2px; /* Rounded corners for the underline */
+}
+
+.underline {
+  height: 1px; /* Thickness of the underline */
+  background-color:black; /* Color of the underline */
+  margin: 2rem 0;
+  
+}
+.rounded{
+  height: 500px;
+  width: auto;
+}
+
+.text-start{
+  padding-left: 10px;
+  
+}
+
+.faq-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+.faq-header:hover {
+  background-color: #f1f1f1;
+}
+.faq-content {
+  padding: 15px;
+  border-left: 4px solid #007bff;
+  background-color: #e9f7fd;
+  margin-bottom: 15px;
+}
+
+.slider-container {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.slide {
+  text-align: center;
+  padding: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* You can adjust this as needed */
+  object-fit: cover;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+
+.slick-dots li button:before {
+  color: black;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}
+
+
+
+
+.arrows-container button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 20px; /* Add space between the buttons */
+}
+
+.arrows-container button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
